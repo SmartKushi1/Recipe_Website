@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: bisque;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: none;
+}
+
+.navcontainer {
+    width: 100vw;
+    /* background-color:rgb(27, 5, 27); */
+    background: linear-gradient(rgb(28, 0, 28), rgb(68, 68, 118));
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+nav {
+    width: 100%;
+  
+    padding-right:2rem ;
+}
+
+#navlist {
+    padding: 15px;
+    /* width: 100%;
+    margin-left: 15px; */
+    margin-right: 15px;
+    list-style: none;
+    font-size: 2.58rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#navlogo {
+    font-size: 2.58rem;
+    color: beige;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(149, 238, 238);
+}
+a:hover{
+    color: rgb(249, 221, 184);
+}
+
+#naviteams {
+    display: flex;
+    gap: 40px;
+}
+
+.footerbox {
+    background-color: purple;
+    background: linear-gradient(rgb(28, 0, 28), rgb(68, 68, 118));
+    color: azure;
+    text-align: center;
+    min-height: 40px;
+
+}
+
+.footerbox p {
+    color: azure;
+    font-size: 2rem;
+}
+
+.contantbox {
+    width: 100%;
+    margin: auto;
+    border: 2px solid black;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 40px;
+
+}
+.iteam{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.rightbox img{
+    height: 400px;
+    width: 400px;
+    border-radius: 25px;
+    transition: 1s 0s;
+    box-shadow: 1px 1px 10px black;
+    border-radius: 20px;
+}
+.leftbox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.rightbox{
+    position:relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.leftbox h1{
+    font-size: 2rem;
+}
+.ingbox{
+    font-size: 1.3rem;
+}
+.recipebox{
+    font-size: 1.1rem;
+}
+.rightbox img:hover{
+    transform: scale(1.05);
+    transition: all 1s ease-in 0s;
+    
+}
+.rightbox.overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(158, 119, 119);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
